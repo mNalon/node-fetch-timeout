@@ -21,6 +21,20 @@ app.get('/progressive/:total', async function(req, res){
   }
 
   res.end()
+}) 
+
+app.get('/constant/:total/:interval', async function(req, res){
+  const { total, interval } = req.params
+  let i = 0
+
+  while(i < total) {
+    res.write(`${i}`)
+    console.log(`${i} sent...\n`)
+    i++
+    await sleep(interval)
+  }
+
+  res.end()
 })  
 
 app.listen(3000, function () {

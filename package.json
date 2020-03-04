@@ -11,6 +11,8 @@
   "author": "nalon",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "yargs": "^15.1.0"
   }
 }
