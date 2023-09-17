@@ -3,6 +3,13 @@ This is a test to validate timeout to requests made by the node-fetch lib.
 
 The aim is to check the **hypothesis** that the timeout consideres the download of the whole payload.
 
+### Setup
+
+```
+nvm install
+npm install
+```
+
 ### -> Start the server
 
 ```
