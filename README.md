@@ -6,7 +6,7 @@ The aim is to check the **hypothesis** that the timeout consideres the download 
 ### -> Start the server
 
 ```
-npm start-server
+npm run start:server
 ```
 
 ### -> Test node-fetch in specific network scenarios
