@@ -11,7 +11,9 @@ const url = `http://localhost:3000/constant/${total}/${interval}`
 
 console.log(`Requesting ${url} - timeout = ${timeout}`)
 
-fetch(url, { ...timeout && { timeout } })
+const signal = AbortSignal.timeout(timeout) 
+
+fetch(url, { ...timeout && { signal } })
   .then(res => { 
     console.log('Request stablished...')
     return res.text() 
